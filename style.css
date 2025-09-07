@@ -46,8 +46,8 @@ body {
 
 /* Adjust sections to account for navbar height */
 section {
-  padding-top: 60px; /* prevent content from hiding behind navbar */
-  scroll-margin-top: 60px; /* smooth scroll offset */
+  padding-top: 35px; /* prevent content from hiding behind navbar */
+  scroll-margin-top: 35px; /* smooth scroll offset */
 }
 
 
@@ -70,8 +70,12 @@ section {
 
 /* About Section */
 #about {
-  background-color: #f0f0f0;
-  color: #000;
+  background-color: #1e1e1e;
+  color: #fff;
+  justify-content: flex-start; /* aligns content to the left horizontally */
+  align-items: flex-start;
+  text-align: left;            /* aligns text inside elements to the left */
+  padding-left: 50px;
 }
 
 /* Projects Section */
@@ -82,8 +86,8 @@ section {
 
 /* Skills Section */
 #skills {
-  background-color: #f0f0f0;
-  color: #000;
+  background-color: #1e1e1e;
+  color: #fff;
 }
 
 /* Contact Section */
