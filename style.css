@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Cascadia+Code&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Cascadia Code", monospace;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  scroll-behavior: smooth; /* smooth scroll when jumping to sections */
+}
+
+/* Navbar */
+#navbar {
+  position: fixed;       /* sticky at top */
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  z-index: 1000;         /* stays on top of content */
+}
+
+#navbar ul {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 10px 0;
+  list-style: none;
+}
+
+#navbar ul li {
+  margin: 0 15px;
+}
+
+#navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Cascadia Code", monospace;
+  font-size: 16px;
+}
+
+#navbar ul li a:hover {
+  color: #f0a500;
+}
+
+/* Adjust sections to account for navbar height */
+section {
+  padding-top: 60px; /* prevent content from hiding behind navbar */
+  scroll-margin-top: 60px; /* smooth scroll offset */
+}
+
+
+/* Sections */
+section {
+  min-height: 100vh; /* each section fills screen */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+}
+
+/* Intro Section */
+#intro {
+  background-color: #f0f0f0;
+  color: #000;
+}
+
+/* About Section */
+#about {
+  background-color: #f0f0f0;
+  color: #000;
+}
+
+/* Projects Section */
+#projects {
+  background-color: #f0f0f0;
+  color: #000;
+}
+
+/* Skills Section */
+#skills {
+  background-color: #f0f0f0;
+  color: #000;
+}
+
+/* Contact Section */
+#contact {
+  background-color: #f0f0f0;
+  color: #000;
+}
+
+
+/* Buttons */
+button {
+  padding: 12px 24px;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #333;
+  color: #fff;
+}
